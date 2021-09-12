@@ -29,8 +29,8 @@ class CreateUsersTable extends Migration
             $table->integer('sendEmail')->length(4)->nullable();
             $table->string('activation',100)->nullable();
             $table->text('params')->nullable();
-            $table->timestamp('lastResetTime')->nullable();
-            $table->integer('resetCount')->nullable();
+            $table->timestamp('lastResetTime')->default(now());
+            $table->integer('resetCount')->default(0);
         });
     }
 

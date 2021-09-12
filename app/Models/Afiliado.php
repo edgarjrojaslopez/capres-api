@@ -50,15 +50,11 @@ class Afiliado extends Model
         'fecha', 
         'capres_procesado', 
         'capres_user', 
-        'capres_fecha', 
-        'created_at', 
-        'updated_at'];
+        'capres_fecha'];
 
     protected $hidden =[
         'capres_user',
-        'capres_fecha',
-        'created_at',
-        'updated_at'
+        'capres_fecha'        
     ];
 
 }

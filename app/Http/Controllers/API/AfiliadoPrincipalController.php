@@ -25,7 +25,7 @@ class AfiliadoPrincipalController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return AfiliadoPrincipalResource::collection(AfiliadoPrincipal::all());
     }
 
     /**
